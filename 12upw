@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+
+cat <<EOF
+
+# New session; start with three rows, equalized.
+# 
+new -s $1 -n q11 'ssh $2'
+splitw -v -t 0 'ssh $6'
+splitw -v -t 1 'ssh ${10}'
+select-layout -E  -t 1
+
+
+# Now, split row one in 4.
+splitw -h -t 0 'ssh $4'
+splitw -h -t 1 'ssh $5'
+splitw -h -t 0 'ssh $3'
+
+# Now, split row two in 4.
+splitw -h -t 4 'ssh $8'
+splitw -h -t 5 'ssh $9'
+splitw -h -t 4 'ssh $7'
+
+# Now, split row three in 4.
+splitw -h -t 8 'ssh ${12}'
+splitw -h -t 9 'ssh ${13}'
+splitw -h -t 8 'ssh ${11}'
+
+setw synchronize-panes on
+
+EOF

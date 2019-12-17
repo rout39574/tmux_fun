@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cat <<EOF
+new -s $1 -n q11 'ssh $2'
+splitw -v -t 0 'ssh $6'
+splitw -h -t 0 'ssh $4'
+splitw -h -t 2 'ssh $5'
+splitw -h -t 4 'ssh $8'
+splitw -h -t 6 'ssh $9'
+
+setw synchronize-panes on
+
+EOF
