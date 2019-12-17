@@ -1,2 +1,4 @@
 erp-genders
 hostlists/
+*~
+*.tcfg
