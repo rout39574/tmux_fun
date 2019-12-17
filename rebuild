@@ -1,6 +1,13 @@
 #!/bin/bash
 
 
+./8upw oneuf_prod_l `cat hostlists/oneuf_prod` > oneuf_prod_l.tcfg
+./8upw oneuf_prod_r `cat hostlists/oneuf_prod` > oneuf_prod_r.tcfg
+
+
+./8upw oneuf_qat_l `cat hostlists/oneuf_qat` > oneuf_qat_l.tcfg
+./8upw oneuf_qat_r `cat hostlists/oneuf_qat` > oneuf_qat_r.tcfg
+
 
 ./2uplr oneuf_test_l `cat  hostlists/oneuf_test `  > oneuf_test_l.tcfg
 ./2uplr oneuf_test_r `cat  hostlists/oneuf_test `  > oneuf_test_r.tcfg
@@ -10,12 +17,21 @@
 ./6up test-ps-apps_r `nodeattr  -f erp-genders  -s 'test&&psapp'` > ./test_ps_apps_r.tcfg
 
 
+
 ./12upw prod_ps_ibapps_l `  nodeattr  -f erp-genders  -n 'prod&&psoft&&psapp' | grep ib   ` > ./prod_ps_ibapps_l.tcfg
+./12upw prod_ps_ibapps_r `  nodeattr  -f erp-genders  -n 'prod&&psoft&&psapp' | grep ib   ` > ./prod_ps_ibapps_r.tcfg
+
+
+./12upw beta_ps_ibapps_l `  nodeattr  -f erp-genders  -n 'beta&&psoft&&psapp' | grep ib   ` > ./beta_ps_ibapps_l.tcfg
+./12upw beta_ps_ibapps_r `  nodeattr  -f erp-genders  -n 'beta&&psoft&&psapp' | grep ib   ` > ./beta_ps_ibapps_r.tcfg
 
 
 
 ./12upw beta_psweb_l `  nodeattr  -f erp-genders  -n 'beta&&psweb' ` > ./beta_psweb_l.tcfg
 ./12upw beta_psweb_r `  nodeattr  -f erp-genders  -n 'beta&&psweb' ` > ./beta_psweb_r.tcfg
+
+
+
 
 
 
