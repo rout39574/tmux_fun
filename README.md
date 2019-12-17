@@ -51,3 +51,7 @@ dimension of tiling.  Thanks.
 
 
 
+The 'rebuild' script just records all the different sessions I've
+decided are useful to maintain, so when I come up with some new stupid
+idea for how 8up ought to work, I can redo everything succinctly.
+
