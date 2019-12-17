@@ -35,7 +35,7 @@ locations w.r.t. this directory.  You don't care about the lists of
 hosts, you just care about what I'm doing with them.
 
 
-So I've got scripts like '8up' or '8upw' which spit put tmux commands
+So I've got scripts like '8up' or '8upw' which spit out tmux commands
 to SSH to the various named hosts, and they wind up looking rational
 when they're done.
 
