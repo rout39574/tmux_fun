@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+
+./2uplr oneuf_test_l `cat  hostlists/oneuf_test `  > oneuf_test_l.tcfg
+./2uplr oneuf_test_r `cat  hostlists/oneuf_test `  > oneuf_test_r.tcfg
+
+
+./6up test-ps-apps_l `nodeattr  -f erp-genders  -s 'test&&psapp'` > ./test_ps_apps_l.tcfg
+./6up test-ps-apps_r `nodeattr  -f erp-genders  -s 'test&&psapp'` > ./test_ps_apps_r.tcfg
+
+
+./12upw prod_ps_ibapps_l `  nodeattr  -f erp-genders  -n 'prod&&psoft&&psapp' | grep ib   ` > ./prod_ps_ibapps_l.tcfg
+
+
+
+./12upw beta_psweb_l `  nodeattr  -f erp-genders  -n 'beta&&psweb' ` > ./beta_psweb_l.tcfg
+./12upw beta_psweb_r `  nodeattr  -f erp-genders  -n 'beta&&psweb' ` > ./beta_psweb_r.tcfg
+
+
+
+
+#echo '
+#        1         2         3         4         5         6         7         8         9        10        11        12 
+#23456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+#'
+
+
