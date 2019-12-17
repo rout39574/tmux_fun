@@ -33,3 +33,21 @@ Or maybe like
 There are several repositories of lists of hosts in well defined
 locations w.r.t. this directory.  You don't care about the lists of
 hosts, you just care about what I'm doing with them.
+
+
+So I've got scripts like '8up' or '8upw' which spit put tmux commands
+to SSH to the various named hosts, and they wind up looking rational
+when they're done.
+
+I also add a token to each tmux config so it'll get stuck in a
+distinct session.  I have two landscape monitors I use for this, so I
+have a convention for a '(l)eft' and '(r)ight' iteration for many of
+the configs.  I usually have a passel of NMONs in the left side, and a
+corresponding grid of shells in the right side.
+
+
+I'd just like to say that tmux plus xmonad is a whole additional
+dimension of tiling.  Thanks.
+
+
+
