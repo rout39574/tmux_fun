@@ -12,12 +12,12 @@ dose of TMUX, and like a responsible adult, I rolled in it.
 
 I'm taking lists of hosts, feeding them into shell scripts that
 reformat them so, e.g. a list 8 items long will be arranged into a
-tmux grid like so
+tmux grid like so  (evidently you need headers for Github Markdown to
+decide to table your tables).
 
 
-|A|B|
-|-|-|
 |1|2|
+|-|-|
 |3|4|
 |5|6|
 |7|8|
@@ -25,9 +25,8 @@ tmux grid like so
 
 Or maybe like
 
-|A|B|C|D|
-|-|-|-|-|
 |1|2|3|4|
+|-|-|-|-|
 |5|6|7|8|
 
 
