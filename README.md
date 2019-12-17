@@ -15,6 +15,8 @@ reformat them so, e.g. a list 8 items long will be arranged into a
 tmux grid like so
 
 
+
+|-|-|
 |1|2|
 |3|4|
 |5|6|
@@ -23,6 +25,8 @@ tmux grid like so
 
 Or maybe like
 
+
+|-|-|-|-|
 |1|2|3|4|
 |5|6|7|8|
 
